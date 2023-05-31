@@ -5,50 +5,54 @@ $searchForm.on("submit", event => {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-    const card = formData.get("card");
+    const card = encodeURIComponent(formData.get("card"));
+    console.log(card);
     const url = `https://db.ygoprodeck.com/api/v7/cardinfo.php?name=${card}`
     console.log(url);
     const $imageContainer = $(".imageContainer");
     const $SearchKey = $(".SearchKey");
       fetch(url)
         .then(response => {
+            console.log(response);
             return response.json();
         })
         .then(data => {
+            console.log(data.data[0].card_images[0].image_url);
             $imageContainer.html(
-                `<img src=${data.image_url} alt=${data.name}>`
-            );
-            $imageContainer.html(`
+                `
+                <img src = ${data.data[0].card_images[0].image_url_small} alt = ${data.data[0].name}
+        
+                
                 <div>
-                    <b>name:&nbsp;</b> ${data.id}
+                    <b>ID:&nbsp;</b> ${data.data[0].id}
                 </div>
 
                 <div>
-                   <b>name:&nbsp;</b>  ${data.name}
+                   <b>Name:&nbsp;</b>  ${data.data[0].name}
                 </div>
 
                 <div>
-                   <b>name:&nbsp;</b> ${data.type}
+                   <b>Type:&nbsp;</b> ${data.data[0].type}
                 </div>
 
                 <div>
-                   <b>name:&nbsp;</b> ${data.atk}
+                   <b>ATK:&nbsp;</b> ${data.data[0].atk}
                 </div>
 
                 <div>
-                   <b>name:&nbsp;</b> ${data.def}
+                   <b>DEF:&nbsp;</b> ${data.data[0].def}
                 </div>
 
                 <div>
-                   <b>name:&nbsp;</b> ${data.level}
+                   <b>Level:&nbsp;</b> ${data.data[0].level}
                 </div>
 
                 <div>
-                   <b>name:&nbsp;</b> ${data.race}
+                   <b>Race:&nbsp;</b> ${data.data[0].race}
                 </div>
 
                 <div>
-                   <b>name:&nbsp;</b> ${data.attribute}
+                   <b>Attribute:&nbsp;</b> ${data.data[0].attribute}
                 </div>
             
             `) 
