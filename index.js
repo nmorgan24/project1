@@ -24,7 +24,11 @@ $searchForm.on("submit", event => {
         
                 
                 <div>
-                    <b>ID:&nbsp;</b> ${data.data[0].id}
+                    <b>Yu-Gi-Oh Card&nbsp;</b> 
+                </div>
+
+                <div>
+                   <b>ID:&nbsp;</b>  ${data.data[0].id}
                 </div>
 
                 <div>
