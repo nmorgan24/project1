@@ -25,7 +25,7 @@ $.ajax("https://db.ygoprodeck.com/api/v7/cardinfo.php?name=")
 
 ### Mackup
 
-![Mockup Image](./img/Screenshot%202023-05-30%20155017.png)
+![Mockup Image](./img/Screenshot%202023-06-02%20162955.png)
 
 
 
