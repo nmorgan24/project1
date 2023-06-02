@@ -5,14 +5,13 @@
 
 body{
     background-image: url(./img/s-l1600.jpg);
-    margin: auto;
-    height: 5px;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .box {
-    background-color: white;
+    background-color: tan;
     width: 300px;
     padding-bottom: 40px;
     height: 50px;
@@ -27,7 +26,7 @@ body{
 }
 
 h1{
-    text-align: center;
+    text-align: center;  
 }
 
 form{
@@ -35,7 +34,7 @@ form{
 }
 
 .description{
-    background-color: white;
+    background-color: tan;
     height: 224px;
     padding-top: 20px;
     width: 300px;
@@ -59,7 +58,7 @@ form{
 .imageContainer{
     width: 300px;
     height: 410px;
-    background-color: white;
+    background-color: tan;
     width: 300px;
     margin: auto;
     margin-bottom: 40px;
@@ -70,7 +69,6 @@ form{
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
     overflow: hidden;
-
 }
 
 .imageContainer > div{
@@ -81,32 +79,39 @@ form{
     outline: 1px solid black;
 }
 
+input{
+    background-color: crimson;
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-left-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+
+}
+
 input:hover{
-    background-color:crimson;
+    background-color:tan;
     color: white;
     cursor: pointer;
 }
 
 .imageContainer > img{
     margin: auto;
-    margin-right: 200px
+    margin-right: 2px 20px;
 }
 
 p{
     text-align: center;
+    font-style: oblique;
 }
 
 .imgclass{
     width: 100px;
     height: 100px;
- 
 }
 
 .imgclass img{
     display: block;
     width: 20%;
-
- 
 }
 
 .logo{

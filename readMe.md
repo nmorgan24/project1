@@ -55,6 +55,6 @@ Fetching something from an API was the most difficult because it involves dealin
 | 3 | Render data to the page |
 | 4 | Add user interactivity (form) |
 | 5 | Styling |
-| 6 |
-| 7 |
-# project1
+| 6 | Add more styling(Fixed a few bugs) | 
+| 7 | Present Project |
+
