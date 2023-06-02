@@ -58,3 +58,7 @@ Fetching something from an API was the most difficult because it involves dealin
 | 6 | Add more styling(Fixed a few bugs) | 
 | 7 | Present Project |
 
+
+### Project
+
+[Click here](https://project1-evdj.onrender.com/) to view my project.
