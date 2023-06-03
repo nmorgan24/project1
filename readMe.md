@@ -59,6 +59,11 @@ Fetching something from an API was the most difficult because it involves dealin
 | 7 | Present Project |
 
 
+### Biggest Take Away
+
+The biggest takeaway from building a website that runs an API is the ability to leverage and interact with external services or data sources, expanding the functionality and possibilities of your website. It enables seamless integration and communication between your website and other applications, opening doors to enhanced features, data retrieval, and streamlined workflows.
+
+
 ### Project
 
 [Click here](https://project1-evdj.onrender.com/) to view my project.
