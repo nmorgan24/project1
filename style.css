@@ -26,7 +26,8 @@ body{
 }
 
 h1{
-    text-align: center;  
+    text-align: center; 
+    color: darkmagenta; 
 }
 
 form{
@@ -72,11 +73,20 @@ form{
 }
 
 .imageContainer > div{
-    outline: 1px solid black;
+   outline: solid black;
+   color: darkmagenta;
 }
 
-.imageContainer > b{
-    outline: 1px solid black;
+.imageContainer > div > img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-top-left-radius: 15px 30px;
+    border-top-right-radius: 15px 30px;
+    border-bottom-left-radius: 15px 30px;
+    border-bottom-right-radius: 15px 30px;
 }
 
 input{
@@ -96,7 +106,6 @@ input:hover{
 
 .imageContainer > img{
     margin: auto;
-    margin-right: 2px 20px;
 }
 
 p{
@@ -126,3 +135,10 @@ p{
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
 }
+
+b{
+    color: greenyellow;
+    outline: solid black;
+}
+
+
